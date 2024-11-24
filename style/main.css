@@ -640,14 +640,13 @@ h1, h2, h3, p {
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
+  row-gap: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer > .container {
-    display: flex;
+    justify-content: center;
     align-items: first baseline;
     flex-direction: row;
-    gap: 0;
-    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -656,7 +655,13 @@ h1, h2, h3, p {
   }
 }
 .footer__wrapper {
-  width: 235px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer__wrapper {
+    width: 235px;
+  }
 }
 .footer__logo {
   color: #fff;
@@ -679,13 +684,14 @@ h1, h2, h3, p {
   font-style: normal;
   margin-top: 20px;
 }
-.footer__box {
-  margin-top: 60px;
+@media screen and (min-width: 768px) {
+  .footer__box {
+    margin-left: 165px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__box {
     margin-left: 70px;
-    margin-top: 0;
   }
 }
 .footer__position {
@@ -744,13 +750,9 @@ h1, h2, h3, p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer__block {
-  margin-top: 60px;
-}
 @media screen and (min-width: 1200px) {
   .footer__block {
-    margin-left: 93px;
-    margin-top: 0;
+    margin-left: auto;
   }
 }
 .footer__subscribe {
@@ -1004,8 +1006,14 @@ h1, h2, h3, p {
 }
 
 .card {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .card__list {
   display: flex;
@@ -1013,11 +1021,21 @@ h1, h2, h3, p {
   gap: 30px;
 }
 .card__item {
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: 100%;
   border: 1px solid #eeeeee;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .card__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .card__item:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
@@ -1072,8 +1090,21 @@ h1, h2, h3, p {
 .button__list {
   display: flex;
   gap: 8px;
-  justify-content: center;
-  margin-bottom: 50px;
+  row-gap: 15px;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .button__list {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button__list {
+    margin-bottom: 50px;
+  }
 }
 
 .button__btn {
