@@ -1,36 +1,35 @@
 
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $footer-background;
 
 
-  & > .container {
+ & > .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
+  justify-content: center;
   flex-wrap: wrap;
   row-gap: 60px;
-
-  @media screen and (min-width: 768px) {
-justify-content: center;
+  
+   @media screen and (min-width: 768px) {
     align-items:first baseline;
     flex-direction: row;
-  
   }
-
-  @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 1200px) {
     text-align: start;
   }
 }
+
 
 &__wrapper {
   display: flex;
   flex-direction: column;
 
-  @media screen and (min-width: 768px) {
-width: 235px;
+   @media screen and (min-width: 768px) {
+   width: 235px;
   }
 }
 
@@ -49,6 +48,8 @@ width: 235px;
   }
 }
 
+
+
 &__color {
   color: $accent-color;
 }
@@ -58,20 +59,16 @@ width: 235px;
   margin-top: 20px;
 }
 
-&__box {
-  // margin-top: 60px;
-  @media screen and (min-width: 768px) {
-    // margin-left: 70px;
 
-    // margin-top: 0;
+
+
+&__box {
+ 
+   @media screen and (min-width: 768px) {
     margin-left: 165px;
   }
- 
-
-  @media screen and (min-width: 1200px) {
-    margin-left: 70px;
-
-    // margin-top: 0;
+   @media screen and (min-width: 1200px) {
+     margin-left: 70px;
   }
 }
 
@@ -92,6 +89,8 @@ width: 235px;
   margin-top: 9px;
 }
 
+
+
 &__link {
   color: $footer-numbers;
   font-size: 14px;
@@ -110,8 +109,11 @@ width: 235px;
   margin-bottom: 20px;
 }
 
+
+
 &__items {
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -132,6 +134,7 @@ width: 235px;
 }
 
 
+
 &__icon {
   width: 20px;
   height: 20px;
@@ -140,20 +143,14 @@ width: 235px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+ 
 
 
 &__block {
-  // margin-top: 60px;
-
-
-  @media screen and (min-width: 1200px) {
-    margin-left: auto;
-    // margin-top: 0;
-
+   @media screen and (min-width: 1200px) {
+   margin-left: auto;
   }
 }
-
-
 
 
 &__subscribe {
@@ -165,7 +162,10 @@ width: 235px;
   text-transform: uppercase;
   margin-bottom: 20px;
   display: inline-block;
+  
 }
+
+
 
 &__form {
   display: flex;
@@ -173,14 +173,13 @@ width: 235px;
   flex-direction: column;
   gap: 20px;
 
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1200px) {
-    gap: 12px;
-    flex-direction: row;
+   @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      gap: 12px;
   }
 }
+
+
 
 &__input {
   color: $footer-numbers;
@@ -196,23 +195,20 @@ width: 235px;
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   width: 100%;
- 
 
-
-  
-  @media screen and (min-width: 480px) {
+   @media screen and (min-width: 480px) {
     width: 450px;
   }
-
-  @media screen and (min-width: 1200px) {
-    width: 358px;
+   @media screen and (min-width: 1200px) {
+   width: 358px;
   }
 }
+
 
 &__btn {
   color: $title-color;
   background-color: $accent-color;
-  padding: 10px 28px;
+  padding: 10px 31px;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
@@ -224,6 +220,10 @@ width: 235px;
   display: flex;
   align-items: center;
   gap: 10px;
+
+   @media screen and (min-width: 1200px) {
+  padding: 10px 28px;
+  }
 }
 
 &__plane {
@@ -233,5 +233,4 @@ width: 235px;
 }
 
 }
-
 
