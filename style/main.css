@@ -82,6 +82,7 @@ h1, h2, h3, p {
   .header__logo {
     font-size: 26px;
     letter-spacing: 0.78px;
+    margin-right: 93px;
   }
 }
 @keyframes logo-scale {
@@ -189,6 +190,98 @@ h1, h2, h3, p {
 .curent:hover::after {
   opacity: 1;
   transform: scale(1);
+}
+
+.header__button {
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: none;
+  }
+}
+
+.header__menu {
+  width: 40px;
+  height: 60px;
+  fill: #000;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+  padding: 48px 40px;
+  opacity: 1;
+  background-color: white;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu__btn {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.menu__close {
+  width: 40px;
+  height: 40px;
+  fill: #212121;
+}
+
+.menu__btn:hover .menu__close {
+  fill: #2196f3;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.menu__link {
+  color: #212121;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  line-height: 1.17;
+}
+
+.menu__link:hover {
+  color: #2196f3;
+}
+
+.menu__list-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 306px;
+  margin-bottom: 64px;
+}
+
+.menu__link-contact {
+  color: #757575;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: 0.48px;
+}
+
+.menu__item-contact:first-child > .menu__link-contact {
+  color: #2196f3;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.68px;
 }
 
 .hero {
