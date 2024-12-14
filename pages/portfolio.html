@@ -95,7 +95,13 @@
             <ul class="card__list">
                 <li class="card__item">
                   <div class="card__box">
-                    <img src="../img/texno.jpg" alt="texno" class="card__img">
+                    <picture>
+                      <source srcset="/img/deskstop/imgtexno-desktop@1x.webp 1x,  /img/deskstop/imgtexno-desktop@2x.webp 2x" media="(min-width: 1200px)">
+                      <source srcset="/img/tablet/imgtexno-tablet@1x.webp 1x, /img/tablet/imgtexno-tablet@2x.webp 2x" media="(min-width: 768px)">
+                      <source srcset="/img/mobile/imgtexno-mobile@1x.webp 1x, /img/mobile/imgtexno-mobile@2x.webp 2x" media="(max-width: 767px)">
+                      <img src="../img/texno.jpg" alt="texno" class="card__img">
+                    </picture>
+                    
                     <p class="card__desk">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                     <div class="card__wrap">
